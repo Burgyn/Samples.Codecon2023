@@ -1,0 +1,70 @@
+[1mdiff --git a/csharp12/Program.cs b/csharp12/Program.cs[m
+[1mindex af1d257..36642d1 100644[m
+[1m--- a/csharp12/Program.cs[m
+[1m+++ b/csharp12/Program.cs[m
+[36m@@ -11,7 +11,7 @@[m [mConsole.WriteLine("Hello CODECON Žilina");[m
+ [m
+ //int[] ages = new int[] { 24, 34, 56 };[m
+ [m
+[31m-// List<string> names = new List<string> { "John", "Mary", "Bob" };[m
+[32m+[m[32m//List<string> names = new List<string> { "John", "Mary", "Bob" };[m
+ [m
+ //int[][] points = new int[][][m
+ //{[m
+[36m@@ -95,21 +95,21 @@[m [mConsole.WriteLine("Hello CODECON Žilina");[m
+ #region Primary constructor[m
+ [m
+ // Old way[m
+[31m-public class Person[m
+[31m-{[m
+[31m-    public string FirstName { get; }[m
+[32m+[m[32m//public class Person[m
+[32m+[m[32m//{[m
+[32m+[m[32m//    public string FirstName { get; }[m
+ [m
+[31m-    public string LastName { get; }[m
+[32m+[m[32m//    public string LastName { get; }[m
+ [m
+[31m-    public int Age { get; }[m
+[32m+[m[32m//    public int Age { get; }[m
+ [m
+[31m-    public Person(string firstName, string lastName, int age)[m
+[31m-    {[m
+[31m-        FirstName = firstName;[m
+[31m-        LastName = lastName;[m
+[31m-        Age = age;[m
+[31m-    }[m
+[31m-}[m
+[32m+[m[32m//    public Person(string firstName, string lastName, int age)[m
+[32m+[m[32m//    {[m
+[32m+[m[32m//        FirstName = firstName;[m
+[32m+[m[32m//        LastName = lastName;[m
+[32m+[m[32m//        Age = age;[m
+[32m+[m[32m//    }[m
+[32m+[m[32m//}[m
+ [m
+ // New way[m
+ //public class Person(string firstName, string lastName, int age)[m
+[36m@@ -139,6 +139,13 @@[m [mpublic class Person[m
+ //{[m
+ //    public IEnumerable<Person> GetPeople()[m
+ //        => repository.GetPeople();[m
+[32m+[m
+[32m+[m[32m//    //private readonly IPeopleRepository _repository;[m
+[32m+[m
+[32m+[m[32m//    //public PeopleService(IPeopleRepository repository)[m
+[32m+[m[32m//    //{[m
+[32m+[m[32m//    //    _repository = repository;[m
+[32m+[m[32m//    //}[m
+ //}[m
+ [m
+ #endregion[m
+[36m@@ -158,4 +165,7 @@[m [mpublic class Person[m
+ //Grade grade1 = Grade(95M);[m
+ //var grade2 = new Grade(91, "A");[m
+ [m
+[32m+[m[32m//static Task<IEnumerable<(decimal scode, string grade)>> GetGrades()[m
+[32m+[m[32m//    => Task.FromResult(Enumerable.Empty<(decimal score, string grade)>());[m
+[32m+[m
+ #endregion[m
+\ No newline at end of file[m

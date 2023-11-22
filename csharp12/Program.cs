@@ -11,7 +11,7 @@ Console.WriteLine("Hello CODECON Žilina");
 
 //int[] ages = new int[] { 24, 34, 56 };
 
-// List<string> names = new List<string> { "John", "Mary", "Bob" };
+//List<string> names = new List<string> { "John", "Mary", "Bob" };
 
 //int[][] points = new int[][]
 //{
@@ -95,29 +95,29 @@ Console.WriteLine("Hello CODECON Žilina");
 #region Primary constructor
 
 // Old way
-public class Person
-{
-    public string FirstName { get; }
-
-    public string LastName { get; }
-
-    public int Age { get; }
-
-    public Person(string firstName, string lastName, int age)
-    {
-        FirstName = firstName;
-        LastName = lastName;
-        Age = age;
-    }
-}
+//public class Person
+//{
+//    public string FirstName { get; }
+//
+//    public string LastName { get; }
+//
+//    public int Age { get; }
+//
+//    public Person(string firstName, string lastName, int age)
+//    {
+//        FirstName = firstName;
+//        LastName = lastName;
+//        Age = age;
+//    }
+//}
 
 // New way
 //public class Person(string firstName, string lastName, int age)
 //{
 //    public string FirstName { get; } = firstName;
-
+//
 //    public string LastName { get; } = lastName;
-
+//
 //    public int Age { get; } = age;
 //}
 
@@ -139,6 +139,13 @@ public class Person
 //{
 //    public IEnumerable<Person> GetPeople()
 //        => repository.GetPeople();
+
+//    //private readonly IPeopleRepository _repository;
+
+//    //public PeopleService(IPeopleRepository repository)
+//    //{
+//    //    _repository = repository;
+//    //}
 //}
 
 #endregion
@@ -157,5 +164,8 @@ public class Person
 
 //Grade grade1 = Grade(95M);
 //var grade2 = new Grade(91, "A");
+
+//static Task<IEnumerable<(decimal scode, string grade)>> GetGrades()
+//    => Task.FromResult(Enumerable.Empty<(decimal score, string grade)>());
 
 #endregion

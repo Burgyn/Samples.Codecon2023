@@ -37,7 +37,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 #endregion
 
-#region Keyed servies
+#region Keyed services
 
 builder.Services
     .AddKeyedSingleton<ILoyaltySystemService, BasicLoyaltySystemService>("basic");
