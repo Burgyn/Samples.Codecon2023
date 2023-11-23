@@ -63,7 +63,7 @@ public class Product
     [DeniedValues(0)]
     public decimal Price { get; set; }
 
-    [DeniedValues(0)]
+    [Range(1, 100, MinimumIsExclusive = true, MaximumIsExclusive = true)]
     public int StockQuantity { get; set; }
 
     [Base64String]
